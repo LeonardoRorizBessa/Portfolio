@@ -11,7 +11,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 100%;
-  background: linear-gradient(320deg, rgb(223, 223, 223), rgb(50, 50, 50));
+  background-color: rgb(0, 0, 0);
 }
 
 .cabeçalho {
@@ -19,7 +19,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 20px;
+  padding: 10px;
 }
 
 .img-cabeçalho {
@@ -32,14 +32,36 @@ body {
 }
 
 .menu-cabeçalho-item {
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: 19px;
 }
 
+.nome {
+  color: #00ffff;
+}
+
+.btn-contato {
+  width: 180px;
+  height: 33px;
+  border: none;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  background-color: #00ffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.btn-contato:hover {
+  color: rgb(0, 0, 0);
+  background-color: #19A7CE;
+  transition: 0.5s;
+}
+
 .conteudo {
-  border-top: 0.4px solid black;
-  margin-bottom: 50px;
+  border-top: 0.4px solid #00ffff;
 }
 
 .conteudo-principal {
@@ -47,7 +69,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin: 50px 150px 0 150px;
+  margin: 50px 150px 50px 150px;
 }
 
 .div-conteudo-principal {
@@ -60,13 +82,13 @@ body {
 .titulo {
   font-weight: 500;
   font-size: 38px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .subtitulo {
   font-weight: 300;
   font-size: 21px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .conteudo-redes {
@@ -87,8 +109,39 @@ body {
   border-radius: 50%;
 }
 
+.linha {
+  border-top: 0.4px solid #00ffff;
+}
 
+.conteudo-secundario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 150px 50px 150px;
+}
 
+.div-conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 30px;
+}
+
+.titulo-secundario {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 38px;
+  color: #00ffff;
+}
+
+.subtitulo-secundario {
+  display: flex;
+  font-weight: 300;
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+}
 
 
 
@@ -96,7 +149,7 @@ body {
 footer .img-rodape {
   display: flex;
   justify-content: space-around;
-  border-top: 0.4px solid black;
+  border-top: 0.4px solid #00ffff;
   padding: 20px;
   height: 110px;
 }
