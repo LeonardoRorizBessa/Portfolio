@@ -6,10 +6,10 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
   font-size: 100%;
   background-color: rgb(0, 0, 0);
 }
@@ -19,7 +19,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 10px;
+  padding: 15px;
 }
 
 .img-cabeçalho {
@@ -34,7 +34,11 @@ body {
 .menu-cabeçalho-item {
   color: rgb(255, 255, 255);
   font-weight: 600;
-  font-size: 19px;
+  font-size: 20px;
+}
+
+.menu-cabeçalho-item:hover {
+  color: #00ffff;
 }
 
 .nome {
@@ -44,50 +48,51 @@ body {
 .btn-contato {
   width: 180px;
   height: 33px;
-  border: none;
   border-radius: 15px;
-  color: rgb(0, 0, 0);
-  background-color: #00ffff;
-  font-family: 'Poppins', sans-serif;
+  color: #00ffff;
+  background-color: black;
+  border-color: #00ffff;
   font-weight: 600;
-  font-size: 19px;
+  font-size: 20px;
   cursor: pointer;
 }
 
 .btn-contato:hover {
   color: rgb(0, 0, 0);
-  background-color: #19A7CE;
-  transition: 0.5s;
+  background-color: #00ffff;
+  transition: 0.4s;
 }
 
 .conteudo {
   border-top: 0.4px solid #00ffff;
+  background-color: rgb(0, 0, 0);
 }
 
-.conteudo-principal {
+.conteudo-principal, .conteudo-secundario{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin: 50px 150px 50px 150px;
+  margin: 75px 150px 75px 150px;
 }
 
 .div-conteudo-principal {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 50%;
+  width: 60%;
 }
 
 .titulo {
   font-weight: 500;
-  font-size: 38px;
+  font-size: 35px;
   color: rgb(255, 255, 255);
 }
 
-.subtitulo {
+.subtitulo, .subtitulo-secundario {
+  display: flex;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 25px;
   color: rgb(255, 255, 255);
 }
 
@@ -97,8 +102,8 @@ body {
 }
 
 .img-redes {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   display: flex;
   cursor: pointer;
 }
@@ -113,43 +118,100 @@ body {
   border-top: 0.4px solid #00ffff;
 }
 
-.conteudo-secundario {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin: 50px 150px 50px 150px;
-}
-
 .div-conteudo-secundario {
   display: flex;
   flex-direction: column;
-  width: 90%;
   gap: 30px;
+  width: 95%;
 }
 
 .titulo-secundario {
   display: flex;
   justify-content: center;
   font-weight: 500;
-  font-size: 38px;
-  color: #00ffff;
+  font-size: 35px;
+  color: black;
+  background-color: #0fffff;
 }
 
-.subtitulo-secundario {
+.conteudo-linguagem {
   display: flex;
-  font-weight: 300;
-  font-size: 21px;
-  color: rgb(255, 255, 255);
+  gap: 15px;
 }
 
-
-
-
-footer .img-rodape {
+.img-linguagem {
+  width: 35px;
+  height: 35px;
   display: flex;
+  cursor: pointer;
+}
+
+.carreira-educaçao, .carreira-cursos, .carreira-skills, .carreira-idiomas, .carreira-competencias {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
+  margin: 75px 150px 75px 150px;
+}
+
+.div-carreira-educaçao, .div-carreira-cursos, .div-carreira-skills, .div-carreira-idiomas, .div-carreira-competencias {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.titulo-educaçao, .titulo-educaçao, .titulo-cursos, .titulo-skills, .titulo-idiomas, .titulo-competencias {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 35px;
+  width: 100%;
+  color: black;
+  background-color: #00ffff;
+}
+
+.info-educaçao, .info-cursos, .info-idiomas, .info-competencias {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  width:100%;
+  color: white;
+}
+
+.info-skills {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width:100%;
+  color: white;
+}
+
+.info-carreira-titulo {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.info-carreira-subtitulo {
+  font-weight: 200;
+  font-weight: 15px;
+}
+
+.info-carreira-mais {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.img-rodape {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
   border-top: 0.4px solid #00ffff;
-  padding: 20px;
-  height: 110px;
 }
