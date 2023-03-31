@@ -28,7 +28,7 @@ body {
 
 .menu-cabeçalho {
   display: flex;
-  gap: 50px;
+  gap: 40px;
 }
 
 .menu-cabeçalho-item {
@@ -45,19 +45,19 @@ body {
   color: #00ffff;
 }
 
-.btn-contato {
+.btn-projetos {
   width: 180px;
   height: 33px;
   border-radius: 15px;
   color: #00ffff;
   background-color: black;
-  border-color: #00ffff;
+  border: 2px solid #00ffff;
   font-weight: 600;
   font-size: 20px;
   cursor: pointer;
 }
 
-.btn-contato:hover {
+.btn-projetos:hover {
   color: rgb(0, 0, 0);
   background-color: #00ffff;
   transition: 0.4s;
@@ -149,21 +149,21 @@ body {
   cursor: pointer;
 }
 
-.carreira-educaçao, .carreira-cursos, .carreira-skills, .carreira-idiomas, .carreira-competencias {
-  display: inline-block;
+.carreira-educaçao, .carreira-cursos, .carreira-skills, .carreira-idiomas, .carreira-competencias, .projetos {
+  display: inline;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 70%;
 }
 
-.div-carreira-educaçao, .div-carreira-cursos, .div-carreira-skills, .div-carreira-idiomas, .div-carreira-competencias {
+.div-carreira-educaçao, .div-carreira-cursos, .div-carreira-skills, .div-carreira-idiomas, .div-carreira-competencias, .div-projetos {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
 
-.titulo-educaçao, .titulo-educaçao, .titulo-cursos, .titulo-skills, .titulo-idiomas, .titulo-competencias {
+.titulo-educaçao, .titulo-educaçao, .titulo-cursos, .titulo-skills, .titulo-idiomas, .titulo-competencias, .titulo-projetos {
   display: flex;
   justify-content: center;
   font-weight: 500;
@@ -173,35 +173,47 @@ body {
   background-color: #00ffff;
 }
 
-.info-educaçao, .info-cursos, .info-idiomas, .info-competencias {
-  display: grid;
+.info-educaçao, .info-cursos, .info-idiomas, .info-competencias, .info-skills, .info-projetos {
+  display: flex;
   gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
   color: white;
   width: 100%;
 }
 
-.info-skills {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  color: white;
-  width: 100%;
+.info-educaçao li, .info-cursos li, .info-idiomas li, .info-competencias li, .info-projetos li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 31.45%;
 }
 
-.info-carreira-titulo {
+.info-skills li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 22.88%;
+}
+
+.info-carreira-titulo, .info-projetos-titulo {
   font-weight: 500;
   font-size: 22px;
 }
 
-.info-carreira-subtitulo {
+.info-carreira-subtitulo, .info-projetos-subtitulo {
   font-weight: 200;
   font-weight: 15px;
 }
 
-.info-carreira-mais {
+.info-carreira-mais, .link-github {
   font-weight: 200;
   font-size: 12px;
+}
+
+.link-github {
+  color: #00ffff;
 }
 
 .img-rodape {
